@@ -1,0 +1,101 @@
+:root {
+  color-scheme: dark;
+  --bg-a: #09111f;
+  --bg-b: #17243c;
+  --line: rgba(255, 255, 255, 0.12);
+  --text: #f5f7fb;
+  --soft: #aab7d3;
+  --accent: #72d5ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(114, 213, 255, 0.18), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(255, 177, 95, 0.16), transparent 26%),
+    linear-gradient(135deg, var(--bg-a), var(--bg-b));
+  color: var(--text);
+}
+
+.login-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.login-card {
+  width: min(100%, 460px);
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: rgba(9, 15, 28, 0.86);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.38);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(28px, 6vw, 42px);
+}
+
+.copy {
+  margin: 12px 0 24px;
+  color: var(--soft);
+  line-height: 1.7;
+}
+
+.login-form {
+  display: grid;
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field span {
+  color: var(--soft);
+  font-size: 14px;
+}
+
+.field input {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.28);
+  color: var(--text);
+  font: inherit;
+}
+
+.primary-action {
+  border: 0;
+  border-radius: 18px;
+  padding: 16px 18px;
+  background: linear-gradient(135deg, #72d5ff, #8cfaaf);
+  color: #05111f;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.status-text {
+  margin: 0;
+  color: var(--soft);
+  font-size: 14px;
+}

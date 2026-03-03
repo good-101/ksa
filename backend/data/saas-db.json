@@ -1,0 +1,318 @@
+{
+  "owner": {
+    "name": "Owner",
+    "email": "owner@example.com",
+    "password": "change-me-now"
+  },
+  "sites": [
+    {
+      "id": "site-1772490802354-pppuj8",
+      "name": "iuhui",
+      "siteSlug": "iuhui",
+      "adminSlug": "admin-4yhfalgx",
+      "customDomain": "",
+      "customerName": "iughu",
+      "customerEmail": "",
+      "status": "active",
+      "createdAt": "2026-03-02T22:33:22.354Z",
+      "settings": {
+        "profileTitle": "KSA",
+        "profileDescription": "اجمع كل روابطك في صفحة واحدة بتجربة أنيقة وسريعة.",
+        "profileImage": "",
+        "activeThemeId": "ember",
+        "themePresets": [
+          {
+            "id": "aurora",
+            "name": "Aurora Glass",
+            "colors": {
+              "backgroundStart": "#0b0e14",
+              "backgroundEnd": "#151d2d",
+              "accent": "#62d0ff",
+              "accentWarm": "#ffb86f",
+              "textStrong": "#f5f7fb",
+              "textSoft": "#c1cada",
+              "surface": "rgba(14, 17, 26, 0.58)"
+            }
+          },
+          {
+            "id": "ember",
+            "name": "Ember Pulse",
+            "colors": {
+              "backgroundStart": "#17090a",
+              "backgroundEnd": "#3a1011",
+              "accent": "#ff6b57",
+              "accentWarm": "#ffc145",
+              "textStrong": "#fff4ef",
+              "textSoft": "#ffcfbf",
+              "surface": "rgba(44, 14, 16, 0.64)"
+            }
+          },
+          {
+            "id": "verdant",
+            "name": "Verdant Night",
+            "colors": {
+              "backgroundStart": "#07130d",
+              "backgroundEnd": "#11261a",
+              "accent": "#3ddc84",
+              "accentWarm": "#d8c325",
+              "textStrong": "#f4fff7",
+              "textSoft": "#b9d9c5",
+              "surface": "rgba(10, 31, 20, 0.62)"
+            }
+          },
+          {
+            "id": "mono",
+            "name": "Monolith",
+            "colors": {
+              "backgroundStart": "#101010",
+              "backgroundEnd": "#2a2a2a",
+              "accent": "#f2f2f2",
+              "accentWarm": "#9f9f9f",
+              "textStrong": "#ffffff",
+              "textSoft": "#d7d7d7",
+              "surface": "rgba(32, 32, 32, 0.66)"
+            }
+          },
+          {
+            "id": "candy",
+            "name": "Candy Pop",
+            "colors": {
+              "backgroundStart": "#170b24",
+              "backgroundEnd": "#2a1340",
+              "accent": "#ff67c8",
+              "accentWarm": "#73d8ff",
+              "textStrong": "#fff7ff",
+              "textSoft": "#e6c6ef",
+              "surface": "rgba(44, 21, 63, 0.62)"
+            }
+          }
+        ],
+        "colors": {
+          "backgroundStart": "#17090a",
+          "backgroundEnd": "#3a1011",
+          "accent": "#ff6b57",
+          "accentWarm": "#ffc145",
+          "textStrong": "#fff4ef",
+          "textSoft": "#ffcfbf",
+          "surface": "rgba(44, 14, 16, 0.64)"
+        },
+        "buttonLayout": "icon-right",
+        "socialLinks": [
+          {
+            "id": "telegram",
+            "label": "Telegram",
+            "url": "",
+            "enabled": true
+          }
+        ],
+        "buttons": []
+      }
+    },
+    {
+      "id": "site-1772549808873-407k2b",
+      "name": "RM",
+      "siteSlug": "rm",
+      "adminSlug": "admin-fbsnst5i",
+      "customDomain": "",
+      "customerName": "RM",
+      "customerEmail": "rm@yourdomain.com",
+      "status": "active",
+      "createdAt": "2026-03-03T14:56:48.873Z",
+      "settings": {
+        "profileTitle": "KSA",
+        "profileDescription": "اجمع كل روابطك في صفحة واحدة بتجربة أنيقة وسريعة.",
+        "profileImage": "",
+        "activeThemeId": "aurora",
+        "themePresets": [
+          {
+            "id": "aurora",
+            "name": "Aurora Glass",
+            "colors": {
+              "backgroundStart": "#0b0e14",
+              "backgroundEnd": "#151d2d",
+              "accent": "#62d0ff",
+              "accentWarm": "#ffb86f",
+              "textStrong": "#f5f7fb",
+              "textSoft": "#c1cada",
+              "surface": "rgba(14, 17, 26, 0.58)"
+            }
+          },
+          {
+            "id": "ember",
+            "name": "Ember Pulse",
+            "colors": {
+              "backgroundStart": "#17090a",
+              "backgroundEnd": "#3a1011",
+              "accent": "#ff6b57",
+              "accentWarm": "#ffc145",
+              "textStrong": "#fff4ef",
+              "textSoft": "#ffcfbf",
+              "surface": "rgba(44, 14, 16, 0.64)"
+            }
+          },
+          {
+            "id": "verdant",
+            "name": "Verdant Night",
+            "colors": {
+              "backgroundStart": "#07130d",
+              "backgroundEnd": "#11261a",
+              "accent": "#3ddc84",
+              "accentWarm": "#d8c325",
+              "textStrong": "#f4fff7",
+              "textSoft": "#b9d9c5",
+              "surface": "rgba(10, 31, 20, 0.62)"
+            }
+          },
+          {
+            "id": "mono",
+            "name": "Monolith",
+            "colors": {
+              "backgroundStart": "#101010",
+              "backgroundEnd": "#2a2a2a",
+              "accent": "#f2f2f2",
+              "accentWarm": "#9f9f9f",
+              "textStrong": "#ffffff",
+              "textSoft": "#d7d7d7",
+              "surface": "rgba(32, 32, 32, 0.66)"
+            }
+          },
+          {
+            "id": "candy",
+            "name": "Candy Pop",
+            "colors": {
+              "backgroundStart": "#170b24",
+              "backgroundEnd": "#2a1340",
+              "accent": "#ff67c8",
+              "accentWarm": "#73d8ff",
+              "textStrong": "#fff7ff",
+              "textSoft": "#e6c6ef",
+              "surface": "rgba(44, 21, 63, 0.62)"
+            }
+          }
+        ],
+        "colors": {
+          "backgroundStart": "#0b0e14",
+          "backgroundEnd": "#151d2d",
+          "accent": "#62d0ff",
+          "accentWarm": "#ffb86f",
+          "textStrong": "#f5f7fb",
+          "textSoft": "#c1cada",
+          "surface": "rgba(14, 17, 26, 0.58)"
+        },
+        "buttonLayout": "icon-right",
+        "socialLinks": [
+          {
+            "id": "tiktok",
+            "label": "TikTok",
+            "url": "",
+            "enabled": true
+          }
+        ],
+        "buttons": []
+      }
+    },
+    {
+      "id": "site-1772549880937-zevr2p",
+      "name": "df",
+      "siteSlug": "df",
+      "adminSlug": "admin-bsux3y4h",
+      "customDomain": "",
+      "customerName": "df",
+      "customerEmail": "df@yourdomain.com",
+      "status": "active",
+      "createdAt": "2026-03-03T14:58:00.937Z",
+      "settings": {
+        "profileTitle": "KSA",
+        "profileDescription": "اجمع كل روابطك في صفحة واحدة بتجربة أنيقة وسريعة.",
+        "profileImage": "",
+        "activeThemeId": "ember",
+        "themePresets": [
+          {
+            "id": "aurora",
+            "name": "Aurora Glass",
+            "colors": {
+              "backgroundStart": "#0b0e14",
+              "backgroundEnd": "#151d2d",
+              "accent": "#62d0ff",
+              "accentWarm": "#ffb86f",
+              "textStrong": "#f5f7fb",
+              "textSoft": "#c1cada",
+              "surface": "rgba(14, 17, 26, 0.58)"
+            }
+          },
+          {
+            "id": "ember",
+            "name": "Ember Pulse",
+            "colors": {
+              "backgroundStart": "#17090a",
+              "backgroundEnd": "#3a1011",
+              "accent": "#ff6b57",
+              "accentWarm": "#ffc145",
+              "textStrong": "#fff4ef",
+              "textSoft": "#ffcfbf",
+              "surface": "rgba(44, 14, 16, 0.64)"
+            }
+          },
+          {
+            "id": "verdant",
+            "name": "Verdant Night",
+            "colors": {
+              "backgroundStart": "#07130d",
+              "backgroundEnd": "#11261a",
+              "accent": "#3ddc84",
+              "accentWarm": "#d8c325",
+              "textStrong": "#f4fff7",
+              "textSoft": "#b9d9c5",
+              "surface": "rgba(10, 31, 20, 0.62)"
+            }
+          },
+          {
+            "id": "mono",
+            "name": "Monolith",
+            "colors": {
+              "backgroundStart": "#101010",
+              "backgroundEnd": "#2a2a2a",
+              "accent": "#f2f2f2",
+              "accentWarm": "#9f9f9f",
+              "textStrong": "#ffffff",
+              "textSoft": "#d7d7d7",
+              "surface": "rgba(32, 32, 32, 0.66)"
+            }
+          },
+          {
+            "id": "candy",
+            "name": "Candy Pop",
+            "colors": {
+              "backgroundStart": "#170b24",
+              "backgroundEnd": "#2a1340",
+              "accent": "#ff67c8",
+              "accentWarm": "#73d8ff",
+              "textStrong": "#fff7ff",
+              "textSoft": "#e6c6ef",
+              "surface": "rgba(44, 21, 63, 0.62)"
+            }
+          }
+        ],
+        "colors": {
+          "backgroundStart": "#17090a",
+          "backgroundEnd": "#3a1011",
+          "accent": "#ff6b57",
+          "accentWarm": "#ffc145",
+          "textStrong": "#fff4ef",
+          "textSoft": "#ffcfbf",
+          "surface": "rgba(44, 14, 16, 0.64)"
+        },
+        "buttonLayout": "icon-right",
+        "socialLinks": [
+          {
+            "id": "whatsapp",
+            "label": "WhatsApp",
+            "url": "",
+            "enabled": true
+          }
+        ],
+        "buttons": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة الإدارة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+  <svg class="admin-icon-defs" aria-hidden="true" focusable="false">
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2Zm10.15 1.64a1.32 1.32 0 1 1 0 2.64 1.32 1.32 0 0 1 0-2.64ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.1a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8Z"/></symbol>
+    <symbol id="icon-telegram" viewBox="0 0 24 24"><path d="M21.44 4.63c.34-.14.71.15.64.52L19.1 19.07c-.06.29-.32.47-.6.43l-5.03-1.68-2.66 2.77a.45.45 0 0 1-.77-.31v-3.43l7.3-7.49a.27.27 0 0 0-.34-.42l-9.02 5.95-3.78-1.26a.53.53 0 0 1-.03-1Z"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 8.66 15l1.24 4.52-4.63-1.2A10 10 0 1 1 12 2Zm0 2.1a7.9 7.9 0 0 0-6.77 11.96l.22.35-.73 2.67 2.74-.71.34.2A7.9 7.9 0 1 0 12 4.1Zm4.58 10.12c-.25-.12-1.47-.72-1.7-.8-.22-.08-.39-.12-.55.13-.16.24-.63.79-.77.95-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.98-1.23-.74-.66-1.24-1.48-1.38-1.73-.15-.24-.02-.37.1-.49.11-.1.24-.26.36-.39.12-.13.16-.22.24-.37.08-.16.04-.29-.02-.41-.07-.12-.55-1.33-.76-1.82-.2-.48-.41-.42-.55-.43h-.47c-.16 0-.41.06-.62.29-.21.24-.82.8-.82 1.95s.84 2.27.96 2.43c.12.16 1.66 2.53 4.02 3.55.56.24 1 .39 1.34.5.56.18 1.08.16 1.48.1.45-.06 1.39-.57 1.59-1.13.2-.56.2-1.04.14-1.13-.06-.1-.22-.16-.47-.29Z"/></symbol>
+    <symbol id="icon-tiktok" viewBox="0 0 24 24"><path d="M14.64 2h2.66c.2 1.66 1.2 3.12 2.7 3.86v2.72a7.46 7.46 0 0 1-2.7-.9v5.34A6.04 6.04 0 1 1 11.26 7h.04v2.77a3.29 3.29 0 1 0 3.34 3.28V2Z"/></symbol>
+    <symbol id="icon-snapchat" viewBox="0 0 24 24"><path d="M12 2.2c-2.87 0-5.2 2.26-5.2 5.06v1.72c0 .31-.22.58-.53.66-.79.21-1.77.33-2.03.92-.18.41.11.82.77 1.08.44.17.83.29 1.06.41.2.1.3.32.25.54-.32 1.48-1.35 2.08-1.35 2.71 0 .4.37.62 1.02.62.47 0 .96-.11 1.42-.31.19-.08.4-.03.53.12.72.86 1.83 1.43 3.06 1.43s2.34-.57 3.06-1.43c.13-.15.34-.2.53-.12.46.2.95.31 1.42.31.65 0 1.02-.22 1.02-.62 0-.63-1.03-1.23-1.35-2.71-.05-.22.05-.44.25-.54.23-.12.62-.24 1.06-.41.66-.26.95-.67.77-1.08-.26-.59-1.24-.71-2.03-.92-.31-.08-.53-.35-.53-.66V7.26c0-2.8-2.33-5.06-5.2-5.06Z"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.77l.42-3.2H13.5V8.56c0-.93.28-1.56 1.67-1.56h1.78V4.14c-.31-.04-1.39-.14-2.64-.14-2.62 0-4.41 1.53-4.41 4.35v2.25H7v3.2h2.9V22h3.6Z"/></symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24"><path d="M18.9 3H21l-4.6 5.26L21.8 21h-4.23l-3.3-4.93L9.96 21H7.85l4.92-5.62L2.6 3h4.34l2.98 4.47L13.82 3h2.1Zm-.74 16.7h1.17L6.3 4.2H5.04Z"/></symbol>
+    <symbol id="icon-link" viewBox="0 0 24 24"><path d="M10.59 13.41a1.98 1.98 0 0 0 2.82 0l3.18-3.18a2.5 2.5 0 1 0-3.54-3.54l-1.42 1.42-1.41-1.41 1.41-1.42a4.5 4.5 0 1 1 6.37 6.37l-3.18 3.18a3.98 3.98 0 0 1-5.64 0l1.41-1.42Zm2.82-2.82a1.98 1.98 0 0 0-2.82 0l-3.18 3.18a2.5 2.5 0 1 0 3.54 3.54l1.42-1.42 1.41 1.41-1.41 1.42a4.5 4.5 0 1 1-6.37-6.37l3.18-3.18a3.98 3.98 0 0 1 5.64 0l-1.41 1.42Z"/></symbol>
+    <symbol id="icon-store" viewBox="0 0 24 24"><path d="M4 6.5 5.2 3h13.6L20 6.5V9a3 3 0 0 1-1.5 2.6V20H5.5v-8.4A3 3 0 0 1 4 9V6.5Zm3.2-1.5-.5 1.5h10.6L16.8 5H7.2ZM9 13v5h6v-5H9Z"/></symbol>
+    <symbol id="icon-bag" viewBox="0 0 24 24"><path d="M7 7V6a5 5 0 0 1 10 0v1h3v14H4V7h3Zm2 0h6V6a3 3 0 0 0-6 0v1Z"/></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 9h-3.07a15.7 15.7 0 0 0-1.17-5A8.04 8.04 0 0 1 18.9 11ZM12 4.05c.86 1.08 1.72 3.03 2.05 5.95H9.95C10.28 7.08 11.14 5.13 12 4.05ZM9.34 6A15.7 15.7 0 0 0 8.17 11H5.1A8.04 8.04 0 0 1 9.34 6ZM5.1 13h3.07a15.7 15.7 0 0 0 1.17 5A8.04 8.04 0 0 1 5.1 13ZM12 19.95c-.86-1.08-1.72-3.03-2.05-5.95h4.1c-.33 2.92-1.19 4.87-2.05 5.95ZM14.66 18a15.7 15.7 0 0 0 1.17-5h3.07A8.04 8.04 0 0 1 14.66 18Z"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24a11.72 11.72 0 0 0 3.68.59c.56 0 .99.43.99.99V20c0 .56-.43 1-.99 1C10.61 21 3 13.39 3 4c0-.56.44-1 .99-1H7.5c.56 0 1 .44 1 .99 0 1.28.2 2.53.59 3.68.11.35.03.74-.25 1.02l-2.22 2.1Z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm2 2v.22l7 4.67 7-4.67V7H5Zm14 10V9.56l-7 4.67-7-4.67V17h14Z"/></symbol>
+    <symbol id="icon-location" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 4.95-7 13-7 13S5 13.95 5 9a7 7 0 0 1 7-7Zm0 9.5A2.5 2.5 0 1 0 12 6.5a2.5 2.5 0 0 0 0 5Z"/></symbol>
+    <symbol id="icon-youtube" viewBox="0 0 24 24"><path d="M21.58 7.19a2.98 2.98 0 0 0-2.1-2.11C17.62 4.5 12 4.5 12 4.5s-5.62 0-7.48.58a2.98 2.98 0 0 0-2.1 2.11A31.7 31.7 0 0 0 2 12a31.7 31.7 0 0 0 .42 4.81 2.98 2.98 0 0 0 2.1 2.11c1.86.58 7.48.58 7.48.58s5.62 0 7.48-.58a2.98 2.98 0 0 0 2.1-2.11A31.7 31.7 0 0 0 22 12a31.7 31.7 0 0 0-.42-4.81ZM10 15.5v-7l6 3.5-6 3.5Z"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.25 2.25 0 1 0 5.3 7.5 2.25 2.25 0 0 0 5.25 3ZM20.44 20h-3.37v-5.6c0-1.34-.03-3.07-1.87-3.07-1.88 0-2.17 1.47-2.17 2.97V20H9.66V8.5h3.24v1.57h.04c.45-.86 1.56-1.77 3.2-1.77 3.42 0 4.05 2.25 4.05 5.18V20Z"/></symbol>
+    <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M9 4 7.5 6H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-3.5L15 4H9Zm3 4.5A4.5 4.5 0 1 1 7.5 13 4.5 4.5 0 0 1 12 8.5Z"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7L8 5Z"/></symbol>
+    <symbol id="icon-music" viewBox="0 0 24 24"><path d="M16 3v10.55A4 4 0 1 1 14 10V6.3l7-1.56V15.5A4 4 0 1 1 19 12V3h-3Z"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.33-8.27C.7 9.38 2.17 5 6.27 5A5.3 5.3 0 0 1 12 8.1 5.3 5.3 0 0 1 17.73 5c4.1 0 5.57 4.38 3.6 7.73C19 16.65 12 21 12 21Z"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3.6 2.57 5.2 5.74.84-4.15 4.04.98 5.72L12 16.68 6.86 19.4l.98-5.72L3.69 9.64l5.74-.84L12 3.6Z"/></symbol>
+    <symbol id="icon-gift" viewBox="0 0 24 24"><path d="M20 7h-2.18A3 3 0 0 0 12 4.94 3 3 0 0 0 6.18 7H4v5h1v8h14v-8h1V7ZM9 6.5c.83 0 1.5.67 1.5 1.5H9a1.5 1.5 0 0 1 0-3Zm6 0a1.5 1.5 0 0 1 0 3h-1.5c0-.83.67-1.5 1.5-1.5ZM11 9v10H7v-7H5V9h6Zm8 3h-2v7h-4V9h6v3Z"/></symbol>
+    <symbol id="icon-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></symbol>
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="M12 3 3 10v11h6v-7h6v7h6V10l-9-7Z"/></symbol>
+    <symbol id="icon-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4V3Z"/></symbol>
+    <symbol id="icon-bell" viewBox="0 0 24 24"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 1 0-14 0v5L3 18v1h18v-1l-2-2Z"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h3v18H4V4h3V2Zm11 8H6v10h12V10Z"/></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M4 4h16v12H7l-3 3V4Zm3 5v2h10V9H7Z"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 5h-2v6l5 3 1-1.73-4-2.27V7Z"/></symbol>
+    <symbol id="icon-cloud" viewBox="0 0 24 24"><path d="M18 10a5 5 0 0 0-9.7-1.7A4 4 0 0 0 8 16h10a3 3 0 0 0 0-6Z"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M11 3h2v9h3l-4 4-4-4h3V3Zm-6 14h14v4H5v-4Z"/></symbol>
+    <symbol id="icon-edit" viewBox="0 0 24 24"><path d="m3 17.25 9.88-9.88 3.75 3.75L6.75 21H3v-3.75ZM14.06 6.19l1.77-1.77a1.5 1.5 0 0 1 2.12 0l1.63 1.63a1.5 1.5 0 0 1 0 2.12l-1.77 1.77-3.75-3.75Z"/></symbol>
+    <symbol id="icon-file" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6V2Zm7 1.5V7h3.5L13 3.5Z"/></symbol>
+    <symbol id="icon-film" viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm3 0v14m12-14v14M8 5l2 3-2 3 2 3-2 3m8-12-2 3 2 3-2 3 2 3"/></symbol>
+    <symbol id="icon-flag" viewBox="0 0 24 24"><path d="M5 3h2v18H5V3Zm2 1h10l-2 3 2 3H7V4Z"/></symbol>
+    <symbol id="icon-gamepad" viewBox="0 0 24 24"><path d="M7 8h10a4 4 0 0 1 3.95 4.63l-.75 4.5A2.5 2.5 0 0 1 16.73 19l-2.08-2H9.35l-2.08 2A2.5 2.5 0 0 1 3.8 17.13l-.75-4.5A4 4 0 0 1 7 8Zm0 3v2H5v2h2v2h2v-2h2v-2H9v-2H7Zm8.5 1.5a1.5 1.5 0 1 0 0 .01v-.01Zm3 3a1.5 1.5 0 1 0 0 .01v-.01Z"/></symbol>
+    <symbol id="icon-headset" viewBox="0 0 24 24"><path d="M12 3a8 8 0 0 0-8 8v5a3 3 0 0 0 3 3h2v-7H6v-1a6 6 0 1 1 12 0v1h-3v7h2a3 3 0 0 0 3-3v-5a8 8 0 0 0-8-8Z"/></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24"><path d="M4 5h16v14H4V5Zm2 2v10h12V7H6Zm2 8 3-4 2 3 2-2 3 3H8Zm2-5a1.5 1.5 0 1 0 0-.01V10Z"/></symbol>
+    <symbol id="icon-info" viewBox="0 0 24 24"><path d="M11 10h2v7h-2v-7Zm0-3h2v2h-2V7Zm1-5a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/></symbol>
+    <symbol id="icon-laptop" viewBox="0 0 24 24"><path d="M5 5h14v10H5V5Zm-2 12h18v2H3v-2Z"/></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24"><path d="M7 10V7a5 5 0 0 1 10 0v3h2v11H5V10h2Zm2 0h6V7a3 3 0 0 0-6 0v3Z"/></symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Zm4 4v2h8V9H8Z"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><path d="M10 4a6 6 0 1 0 3.87 10.58l4.77 4.77 1.41-1.41-4.77-4.77A6 6 0 0 0 10 4Z"/></symbol>
+    <symbol id="icon-settings" viewBox="0 0 24 24"><path d="m19.14 12.94.04-.94-.04-.94 2.03-1.58-1.92-3.32-2.39.96a7.6 7.6 0 0 0-1.63-.94L14.9 2h-3.8l-.33 2.18c-.57.23-1.11.54-1.63.94l-2.39-.96-1.92 3.32 2.03 1.58-.04.94.04.94-2.03 1.58 1.92 3.32 2.39-.96c.52.4 1.06.71 1.63.94L11.1 22h3.8l.33-2.18c.57-.23 1.11-.54 1.63-.94l2.39.96 1.92-3.32-2.03-1.58ZM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5.25 3.4 9.74 8 11 4.6-1.26 8-5.75 8-11V5l-8-3Z"/></symbol>
+    <symbol id="icon-shopping" viewBox="0 0 24 24"><path d="M6 7h13l-1.5 9h-10L6 7Zm3-4h6l1 3H8l1-3Zm1 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></symbol>
+    <symbol id="icon-thumbsup" viewBox="0 0 24 24"><path d="M2 21h4V9H2v12Zm20-11c0-1.1-.9-2-2-2h-6l.95-4.57.03-.32a1.5 1.5 0 0 0-.44-1.06L13.83 1 8.58 6.25A2 2 0 0 0 8 7.66V19a2 2 0 0 0 2 2h7a2 2 0 0 0 1.88-1.34l3-8.5c.08-.2.12-.43.12-.66V10Z"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.42 0-8 2.24-8 5v3h16v-3c0-2.76-3.58-5-8-5Z"/></symbol>
+    <symbol id="icon-video" viewBox="0 0 24 24"><path d="M4 6h11v12H4V6Zm13 4 3-2v8l-3-2v-4Z"/></symbol>
+  </svg>
+  <main class="admin-shell">
+    <section class="admin-card" aria-label="لوحة إدارة الموقع">
+      <div class="admin-orb admin-orb-a" aria-hidden="true"></div>
+      <div class="admin-orb admin-orb-b" aria-hidden="true"></div>
+      <header class="admin-header">
+        <div>
+          <span class="admin-badge">لوحة إدارة خاصة</span>
+          <h1>تخصيص الواجهة</h1>
+        </div>
+        <p>اختر أحد 5 ثيمات مختلفة، عدّل ألوانه بالكامل، تحكم بأيقونات التواصل وروابطها، وأضف أو احذف أزرار الروابط كما تريد.</p>
+      </header>
+
+      <section class="admin-grid">
+        <form class="admin-form" id="settings-form">
+          <section class="form-panel">
+            <div class="panel-title-row">
+              <h2>الثيمات</h2>
+              <span class="mini-note">5 تصاميم جاهزة مع تعديل كامل للألوان</span>
+            </div>
+            <div class="theme-grid" id="theme-grid"></div>
+          </section>
+
+          <section class="form-panel">
+            <h2>الصورة والنص</h2>
+            <label class="field">
+              <span>اسم الحساب</span>
+              <input type="text" id="profile-title-input" placeholder="KSA">
+            </label>
+            <label class="field">
+              <span>النص تحت الصورة</span>
+              <textarea id="profile-description-input" rows="3" placeholder="اكتب النص الذي يظهر أسفل الصورة"></textarea>
+            </label>
+            <label class="field">
+              <span>رابط الصورة</span>
+              <input type="url" id="profile-image-input" placeholder="https://example.com/image.jpg">
+            </label>
+            <label class="field">
+              <span>أو اختر صورة من جهازك</span>
+              <input type="file" id="profile-image-file" accept="image/*">
+            </label>
+          </section>
+
+          <section class="form-panel">
+            <h2>ألوان الثيم الحالي</h2>
+            <div class="color-grid">
+              <label class="field"><span>بداية الخلفية</span><input type="color" id="background-start-input"></label>
+              <label class="field"><span>نهاية الخلفية</span><input type="color" id="background-end-input"></label>
+              <label class="field"><span>اللون الأساسي</span><input type="color" id="accent-input"></label>
+              <label class="field"><span>اللون الثانوي</span><input type="color" id="accent-warm-input"></label>
+              <label class="field"><span>لون النص الرئيسي</span><input type="color" id="text-strong-input"></label>
+              <label class="field"><span>لون النص الثانوي</span><input type="color" id="text-soft-input"></label>
+              <label class="field"><span>لون سطح البطاقات</span><input type="color" id="surface-color-input"></label>
+              <label class="field"><span>شفافية سطح البطاقات</span><input type="range" id="surface-opacity-input" min="0" max="100" value="58"></label>
+            </div>
+            <p class="mini-note" id="surface-opacity-value">58%</p>
+          </section>
+
+          <section class="form-panel">
+            <h2>أيقونات التواصل</h2>
+            <div class="stack-list" id="social-list"></div>
+            <button type="button" class="secondary-action" id="add-social-button">إضافة أيقونة تواصل</button>
+          </section>
+
+          <section class="form-panel">
+            <div class="panel-title-row">
+              <h2>الأزرار</h2>
+              <div class="radio-row">
+                <label class="layout-option compact"><input type="radio" name="buttonLayout" value="icon-right"><span>الأيقونة يمين النص</span></label>
+                <label class="layout-option compact"><input type="radio" name="buttonLayout" value="icon-left"><span>الأيقونة يسار النص</span></label>
+              </div>
+            </div>
+            <div class="stack-list" id="button-list"></div>
+            <button type="button" class="secondary-action" id="add-button-button">إضافة زر</button>
+          </section>
+
+          <div class="action-row">
+            <button type="submit" class="primary-action">حفظ التغييرات</button>
+            <p class="status-text" id="status-text">جاهز</p>
+          </div>
+        </form>
+
+        <section class="preview-panel">
+          <div class="preview-card" id="preview-card">
+            <div class="preview-avatar">
+              <img class="preview-image is-hidden" id="preview-image" alt="معاينة الصورة">
+              <div class="preview-fallback" id="preview-fallback">
+                <span>KSA</span>
+              </div>
+            </div>
+            <h3 id="preview-title">KSA</h3>
+            <p id="preview-description">اجمع كل روابطك في صفحة واحدة بتجربة أنيقة وسريعة.</p>
+            <div class="preview-socials" id="preview-socials"></div>
+            <div class="preview-buttons" id="preview-buttons"></div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const url = new URL(window.location.href);
+      const querySlug = url.searchParams.get("adminSlug");
+      const pathMatch = window.location.pathname.match(/^\/admin\/([a-z0-9-]+)$/i);
+      const pathSlug = pathMatch ? pathMatch[1] : "";
+      window.ADMIN_SLUG = querySlug || pathSlug || "";
+    }());
+  </script>
+  <script src="/admin.js"></script>
+</body>
+</html>

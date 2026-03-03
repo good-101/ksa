@@ -1,0 +1,11 @@
+name = "ksa-saas"
+main = "src/worker.mjs"
+compatibility_date = "2026-03-02"
+
+assets = { directory = "./frontend", binding = "ASSETS" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ksa_saas"
+database_id = "004ec14d-7d9f-4a46-b196-d2793fb06169"
+migrations_dir = "cloudflare/migrations"

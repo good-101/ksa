@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+  <main class="dashboard-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Multi-Customer SaaS</p>
+        <h1>Customer Sites Dashboard</h1>
+        <p class="copy">Create a site for each client, send them their private admin link, and keep all tenants in one system.</p>
+      </div>
+      <button id="logout-button" class="ghost-action" type="button">Log Out</button>
+    </section>
+
+    <section class="dashboard-grid">
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Create Customer Site</h2>
+          <p id="owner-badge" class="panel-note"></p>
+        </div>
+        <form id="create-site-form" class="site-form">
+          <label class="field">
+            <span>Site name</span>
+            <input type="text" id="site-name-input" placeholder="Luxury Links" required>
+          </label>
+          <label class="field">
+            <span>Customer name</span>
+            <input type="text" id="customer-name-input" placeholder="Client name">
+          </label>
+          <label class="field">
+            <span>Customer email</span>
+            <input type="email" id="customer-email-input" placeholder="client@example.com">
+          </label>
+          <label class="field">
+            <span>Custom domain</span>
+            <input type="text" id="custom-domain-input" placeholder="client.example.com">
+          </label>
+          <button type="submit" class="primary-action">Create Site</button>
+          <p id="create-status" class="panel-note">Each site gets a private admin link. Public sites can use a slug path or a client-owned domain on the same HTTPS port.</p>
+        </form>
+      </section>
+
+      <section class="panel wide-panel">
+        <div class="panel-header">
+          <h2>Your Customer Sites</h2>
+          <p class="panel-note">Open links directly or copy them to send to clients. Custom domains route by host, not by separate ports.</p>
+        </div>
+        <div id="sites-list" class="sites-list"></div>
+      </section>
+    </section>
+  </main>
+  <script src="/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Owner Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/owner-login.css">
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-card">
+      <p class="eyebrow">SaaS Control</p>
+      <h1>Owner Dashboard Login</h1>
+      <p class="copy">Sign in to create customer sites, copy their links, and manage your SaaS catalog.</p>
+      <form id="owner-login-form" class="login-form">
+        <label class="field">
+          <span>Email</span>
+          <input type="email" id="email-input" autocomplete="username" required>
+        </label>
+        <label class="field">
+          <span>Password</span>
+          <input type="password" id="password-input" autocomplete="current-password" required>
+        </label>
+        <button type="submit" class="primary-action">Open Dashboard</button>
+        <p id="status-text" class="status-text">Use the owner credentials from your SaaS database.</p>
+      </form>
+    </section>
+  </main>
+  <script src="/owner-login.js"></script>
+</body>
+</html>
