@@ -480,13 +480,23 @@ function renderPreviewButtonMedia(item, accentColor) {
   return `<span class="preview-icon-chip" style="background:${hexToRgba(accentColor, 0.24)}"><svg viewBox="0 0 24 24"><use href="#icon-${iconId}"></use></svg></span>`;
 }
 
-function handleThemeClick(event) {
-  const button = event.target.closest("[data-theme-id]");
-  if (!button) return;
-  syncCurrentThemeFromFields();
-  state.settings.activeThemeId = button.dataset.themeId;
-  loadCurrentThemeColors();
-  renderThemeGrid();
+function handleButtonListInput(event) {
+  const card = event.target.closest("[data-button-index]");
+  if (!card) return;
+
+  const index = Number(card.dataset.buttonIndex);
+  const field = event.target.dataset.buttonField;
+  if (!field) return;
+
+  state.settings.buttons[index][field] =
+    field === "enabled" ? event.target.checked : event.target.value;
+
+  // مهم: لا تعيد رسم القائمة أثناء الكتابة لأن الجوال يفقد الـ focus والكيبورد يختفي
+  // نعيد الرسم فقط عند تغيير mediaType لأن الواجهة تتغير (صورة/أيقونة)
+  if (field === "mediaType") {
+    renderButtonRows();
+  }
+
   syncPreview();
 }
 
