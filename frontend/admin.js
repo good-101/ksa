@@ -488,15 +488,13 @@ function handleButtonListInput(event) {
   const field = event.target.dataset.buttonField;
   if (!field) return;
 
+  // Update state only
   state.settings.buttons[index][field] =
     field === "enabled" ? event.target.checked : event.target.value;
 
-  // مهم: لا تعيد رسم القائمة أثناء الكتابة لأن الجوال يفقد الـ focus والكيبورد يختفي
-  // نعيد الرسم فقط عند تغيير mediaType لأن الواجهة تتغير (صورة/أيقونة)
-  if (field === "mediaType") {
-    renderButtonRows();
-  }
-
+  // IMPORTANT:
+  // Do NOT re-render the whole buttons list on every keystroke.
+  // This is what causes focus loss + keyboard closing on mobile.
   syncPreview();
 }
 
