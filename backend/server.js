@@ -18,8 +18,7 @@ const {
 } = require("./database");
 
 const PORT = Number(process.env.PORT || 3000);
-const HOST = process.env.HOST || "127.0.0.1";
-const OWNER_SESSION_COOKIE = "saas_owner_session";
+const HOST = process.env.HOST || "0.0.0.0";const OWNER_SESSION_COOKIE = "saas_owner_session";
 
 const FRONTEND_DIR = path.join(__dirname, "..", "frontend");
 const sessions = new Map();
